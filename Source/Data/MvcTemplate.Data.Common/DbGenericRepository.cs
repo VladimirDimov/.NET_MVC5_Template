@@ -4,7 +4,7 @@
     using System.Data.Entity;
     using System.Linq;
 
-    class DbGenericRepository<T, TKey> : IDbGenericRepository<T, TKey>
+    public class DbGenericRepository<T, TKey> : IDbGenericRepository<T, TKey>
         where T : class
     {
         public DbGenericRepository(DbContext context)
